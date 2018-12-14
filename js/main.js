@@ -1,7 +1,7 @@
 var class_image_point = [
     {
         "id": "class01",
-        "Category": "AI影像技術應用工程師班 (限額30人)",
+        "Category": "看到這句話～表示我貼了 Script AI影像技術應用工程師班 (限額30人)",
         "type": "實體課程(skill導向、PBL教學)",
         "hours": "237 小時",
         "events":
