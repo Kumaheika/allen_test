@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="緯育TibaMe 團隊與勞動部勞動發展署桃竹苗分署合作，以堅強師資陣容與專業訓練團隊，規劃AI人工智慧產業專業人才的職訓計畫，協助你成為AI專業人才，資格符合者，政府補助 80%學費，特定身分更是 100%全額補助!培訓分為AI影像技術與AI文字技術二大類，10月底起連續14週237小時培訓，補助名額有限，讓您成為產業最夯的AI產業人才。"/>
+    <meta property="og:title" content="107年建置「AI人工智慧產業專業人才發展基地」計畫｜TibaMe"/>
+    <meta property="og:description" content="緯育TibaMe 團隊與勞動部勞動發展署桃竹苗分署合作，以堅強師資陣容與專業訓練團隊，規劃AI人工智慧產業專業人才的職訓計畫，協助你成為AI專業人才，資格符合者，政府補助 80%學費，特定身分更是 100%全額補助!培訓分為AI影像技術與AI文字技術二大類，10月底起連續14週237小時培訓，補助名額有限，讓您成為產業最夯的AI產業人才。"/>
+    <meta property="og:url" content="https://www.tibame.com/goodjob/ai-engineer"/>
+    <meta property="og:image" content="https://marketing-prd.s3.amazonaws.com/goodjob/ai-engineer/images/FB.png"/>
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>107年建置「AI人工智慧產業專業人才發展基地」計畫｜TibaMe</title>
+  </head>
+  <body>
+    <div class="wrap" id="annual">
+      <div class="solid-white"></div>
+      <div class="popup-area" id="member" :class="{'active' : modalstatus}">
+        <div></div>
+        <div class="solid-black" @click="modalClose('member')"></div>
+        <div class="popup-window2">
+          <div class="window-head">
+            <div class="popup-title">下列特定對象參訓者(20類)，得依規定檢具證明文件申請</div>
+            <div class="window-close" @click="modalClose('member')"><img src="images/event_colse.svg" alt="close"/></div>
+          </div>
+          <div class="window-content">
+            <ol class="ol-style popup">
+              <li>就業保險被保險人 失業者(自願或非自願離職)</li>
+              <li>獨力負擔家計之失業者</li>
+              <li>中高齡之失業者 </li>
+              <li>身心障礙之失業者 </li>
+              <li>原住民之失業者 </li>
+              <li>低收入戶或中低收 入戶中有工作能力之失業者</li>
+              <li>長期失業者 </li>
+              <li>二度就業婦女之失業者 </li>
+              <li>家暴及性侵害被害 人之失業者 </li>
+              <li>更生受保護人之失 業者</li>
+              <li>新住民之失業者 </li>
+              <li>跨國(境)人口販 運被害人之失業者 </li>
+              <li>無戶籍國民之失業者 </li>
+              <li>無國籍人民之失業者 </li>
+              <li>因犯罪被害之失業者 </li>
+              <li>因重大災害受災之失業者 </li>
+              <li>受貿易自由化影響失業者 </li>
+              <li>自立少年之失業者 </li>
+              <li>其他經直轄市、縣(市)政府或其委託計畫之工 人員訪視評估確有經濟困難，且有就業意願之失業者 </li>
+              <li>逾 65 歲之失業者</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="popup-area" id="rules" :class="{'active' : modalstatus2}">
+        <div class="popup-window2">
+          <div class="window-head">
+            <div class="popup-title">考場規定</div>
+            <div class="window-close" @click="modalClose('rules')"><img src="images/event_colse.svg" alt="close"/></div>
+          </div>
+          <div class="window-content">
+            <div class="event-infor popup cyan large ta-l">筆試階段：</div>
+            <ol class="ol-style popup">
+              <li>筆試前，報名者應出示身分及資格之證明文件以供查驗，未符資格者，不得參加筆試；甄試當日未攜帶身分及資格之證明文件者，應簽具並繳交符合資格之切結書，並於錄訓報到時出示證明文件，未出示者，視同放棄參訓資格。</li>
+              <li>應設置二名(含)以上監考人員，筆試測驗開始十五分鐘後不得進入試場應試，視為缺考；缺考或違反筆試考場規定情節重大者，不得參加口試。</li>
+            </ol>
+            <div class="event-infor popup cyan large ta-l">口試階段：</div>
+            <ol class="ol-style popup">
+              <li>應設置二名(含)以上之口試委員，並得由就業服務人員或具相關專業之專家學者擔任。</li>
+              <li>口試將採全程錄音或錄影。</li>
+              <li>口試內容應與學員參訓身分、參訓歷史、近半年求職歷程、訓後生涯規劃及適訓綜合評估等項目有關，不得涉及歧視或其他不當言論，並依口試情形綜合評估其適訓狀況。</li>
+            </ol>
+          </div>
+        </div>
+        <div class="solid-black" @click="modalClose('rules')"></div>
+      </div>
+      <div class="header-zone">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="plan">107年建置「AI人工智慧產業專業人才發展基地」計畫</div>
+              <div class="main-title">AI技術應用工程師班<span>勞動部補助80%-100%學費</span></div>
+              <div class="infor"><span>【本年度僅此 2 班，錯過可惜】</span>面對 AI 產業應用人才職缺需求眾多，正在求職的你苦無入門機會嗎? 緯育TibaMe 團隊與勞動部勞動發展署桃竹苗分署合作，以堅強的師資陣容，專業訓練團隊，規劃與市場接軌的訓練課程、實作練習、團隊專案開發 (team project)，協助你成為更具競爭力的專業人才，資格符合者，勞動部勞動發展署桃竹苗分署將補助 80%學費，特定身分學員，更是 100%全額補助!</div>
+              <div class="class-box"><a class="class-item" href="#">
+                  <div class="data">10/27(六)起</div>
+                  <div class="hour">合計14週週末，共計237小時</div>
+                  <div class="title">AI影像技術應用工程師班</div></a><a class="class-item" href="#">
+                  <div class="data">10/28(日)起</div>
+                  <div class="hour">合計14週週末，共計237小時</div>
+                  <div class="title">AI文字技術應用工程師班</div></a></div>
+              <div class="sign-zone"><a class="my-tbn signin-btn" :href="event_infor.signURL">立即報名搶位</a></div>
+              <div class="ad_keyword">※ 勞動部勞動力發展署桃竹苗分署廣告</div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-photo"><img src="images/banner-1920.png" alt="background" data-size="web"/><img src="images/banner-768.png" alt="background" data-size="pad"/></div>
+      </div>
+      <div class="sharebox">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <div class="share-box"><a class="share-item" href="#" target="_blank" title="分享到Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&amp;t=' + encodeURIComponent(document.URL)); return false;"><img src="images/ic_facebook.svg" alt="facebook"/></a><a class="share-item" href="#" target="_blank" onclick="window.open('https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="images/ic_line.svg" alt="Line"/></a><a class="share-item" href="#" target="_blank" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="images/ic_google.svg" alt="Google"/></a><a class="share-item" href="#" target="_blank" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;"><img src="images/ic_linkedin.svg" alt="linkedin"/></a><a class="share-item" href="#" target="_blank" @click.prevent="sendEmail"><img src="images/ic_email.svg" alt="email"/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="section-subtitle">依據這四年輔導500多位學員就業，廠商對AI技術的需求如下圖<br/>掌握Python是廠商需求殷切的AI技能</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-imges chart"><img src="images/chart-bar.svg" alt="chart-bar"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">計畫目的</h1>
+            <div class="section-subtitle">成為炙手可熱的「數位世代AI科技人才」</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-infor">全球企業普遍都缺乏「AI 技術應用」的人才，本計畫將培訓學員建立最新AI 科技技能，並參與企業型的專題實作，讓你完訓後立即成為炙手可熱的「數位世代 AI 技術應用人才」。</div>
+              <div class="event-infor">對剛離開學校尚在找工作，有決心想要投入AI 領域就業的你，特別是理工科系、數學系、統計系、商學院、資工及資管等相關科系，給你自己14週時間參加此 AI 技術應用培訓，會讓你有機會進入 AI 領域的殿堂。有資訊相關工作經驗，目前失業尚在找尋下一個工作機會者，對 AI 技術應用有興趣，也很想往 AI 領域轉換跑道，此 AI 培訓是你第一選擇。</div>
+              <div class="event-infor">本計畫培訓 AI 六種能力，期許能透過與市場接軌的課程設計、實作練習、團隊專案開發 (team project)，更加值提供線上課程可隨時閱讀 AI 相關知識，協助你養成新世代 AI 技能。</div>
+            </div>
+            <div class="col-12 col-xl-10">
+              <div class="event-imges six"><img src="images/six-skills.svg" alt="six-skills"/></div>
+            </div>
+            <div class="col-12 col-xl-10">
+              <dl class="dl-style">
+                <dt>Python 程式設計能力</dt>
+                <dd>會使用 Python 環境設置與基本與語法；會用  Python Matplotlib 、Django 進行數據視覺化的能力</dd>
+                <dt>爬蟲及資料清洗能力</dt>
+                <dd>會運用 Python 進行資料收集、網路爬蟲、資料清理</dd>
+                <dt>統計及機器學習能力</dt>
+                <dd>會用 Scikit-learn 進行如 Logistic Regression、SVM、Decision Tree 等 Machine Learning 的實作</dd>
+                <dt>深度學習能力</dt>
+                <dd>會用 Keras-TensorFlow 進行 DNN、CNN、RNN 實作；進一步以 AWS 進行機器學習與深度學習實作</dd>
+                <dt>影像識別能力/文字識別能力</dt>
+                <dd>掌握機器學習與深度學習的演算法後，能套用在文字識別、影像識別等技術領域上</dd>
+                <dt>專案開發能力</dt>
+                <dd>訓練學員團隊開發專案，強化學員的 AI 開發實戰力</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">課程特色</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-infor">本計畫有 237 小時的 AI 學習路徑，規劃成環環相扣 14 週的週末培訓課程，讓你從資料爬蟲及洗滌、統計及機器學習、深度學習、影像識別或文字識別、資料視覺顯示等多個面像切入，以技能實作為培訓方式，讓你學會 AI 相關專業技能，成為 AI 世代的工程師。</div>
+            </div>
+            <div class="col-12 col-xl-10">
+              <div class="event-imges flow"><img src="images/flow.svg" alt="flow"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class greyBG">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">課程大綱</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="class-panel" v-for="(item, index) in class_image_point" :id="item.id">
+                <div class="panel-title">{{item.Category}}</div>
+                <div class="panel-infor-zone">
+                  <div class="panel-learn">{{item.type}}</div>
+                  <div class="panel-hour">{{item.hours}}</div>
+                </div>
+                <div class="panel-table">
+                  <div class="panel-table-item table-th">
+                    <div class="item">課程主題</div>
+                    <div class="item">基礎理論篇</div>
+                    <div class="item">進階實作篇</div>
+                  </div>
+                  <div class="panel-table-item table-td" v-for="(list, val) in item.events">
+                    <div class="item">{{list.title}}</div>
+                    <div class="item">{{list.basic}}</div>
+                    <div class="item">{{list.adv}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class greyBG">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">TibaMe 加值回饋</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-infor">本計畫加值再加值，為你在實作教學時有更紮實的知識基礎，由緯育TibaMe 贊助提供 60 小時線上學習單元<span>(超過20,000元)</span>，配合週末實作課程，讓你可依自己程度、時間，隨時補強自己不足的相關知識及技能。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">報名資格</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-infor">
+                <ol class="ol-style">
+                  <li>本國 15 歲以上 30 歲以下失業青年優先參訓。</li>
+                  <li>本計畫是勞動部計畫，依法不得招收在職勞工、自營作業者、公司或行(商)號負責人參訓。</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">筆試+口試錄取培訓學員</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <dl class="dl-style">
+                <dt>本計畫學員採甄選錄訓制</dt>
+                <dd>甄試作業分筆試及口試二階段，分數各占百分之五十。筆試加口試總成績達六十分以上始得錄訓。<a @click.prevent="modalOpen('rules')" href="https://wwwc.moex.gov.tw/main/ExamLaws/wfrmExamLaws.aspx?kind=1&amp;menu_id=318&amp;laws_id=13&amp;sub_menu_id=1439" target="_blank">點我看考場規定</a></dd>
+                <dd>預計107/10/24(三)經分署核定後公告錄取名單。</dd>
+                <dt>筆試時間/地點</dt>
+                <dd>107/10/16(二) 10:00-12:00</dd>
+                <dd>國立中央大學電機工程二館(桃園市中壢區中大路300號)</dd>
+                <dt>筆試考試時間/內容</dt>
+                <dd>50分鐘</dd>
+                <dd>單選 10題、3題實作填充</dd>
+                <dt>筆試評量架構</dt>
+                <dd>初級程式觀念6題，每題6分、實作填充2題、每題10分</dd>
+                <dd>中級程式觀念4題，每題8分、實作填充1題、每題12分</dd>
+                <dt>口試時間</dt>
+                <dd>。AI影像技術應用工程師班  107/10/18(四) 09:00-16:00</dd>
+                <dd>。AI文字技術應用工程師班  107/10/19(五) 09:00-16:00</dd>
+                <dd>國立中央大學電機工程二館：桃園市中壢區中大路300號</dd>
+                <dt>錄取公告日期</dt>
+                <dd>107/10/24(三)經分署核定後公告</dd>
+                <dt>口試評分標準</dt>
+                <dd>參訓歷史(15分)、服裝儀容及態度(5分)、表達及思考邏輯(5分)、參訓條件(5分)、參訓目的(10分)、就業意願與規劃(10分)</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">補助資格</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10 m-b-60">
+              <dl class="dl-style">
+                <dt>一般學員(依桃竹苗分署核定為準)</dt>
+                <dd>學員完訓後，政府補助 80%培訓學費，學員自繳約<span>NT8,000~12,000元</span>，詳細金額依桃竹苗分署核定為準</dd>
+                <dt>特定對象</dt>
+                <dd>學員完訓後，政府 100%補助，<span>學員免付學費</span>，得依規定檢具證明文件申請</dd>
+                <dd><a href="#" @click.prevent="modalOpen('member')">特定對象說明</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class greyBG">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">計畫時程</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-imges plan"><img src="images/plan-date.svg" alt="plan-date"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class greyBG">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">找到好工作</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <ul class="ul-style">
+                <li>Demo Day 安排學員展示專題，邀請廠商看專題及求才</li>
+                <li>結訓前一個月就開始安排媒合就業</li>
+                <li>持續追蹤媒合就業3個月</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-class">
+        <div class="container">
+          <div class="row">
+            <h1 class="section-title">關於TibaMe在AI領域的就業養成培訓的經驗</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="event-infor">緯育 TibaMe 團隊自 2014 年開始 Big Data / AI 就業養成培訓，到現在已經有超過 500 位學員完訓， 這些結訓學員曾完成超過 85 個團隊專題開發，專題領域分佈有金融股市分析、線上行銷效益分析、觀光推薦分析、居住品質分析，音樂作曲推薦、新聞焦點分析、輿情分析、政治透視等等，這些專題獲得求才企業高度肯定與認同，所以結業後學員 每班就業率都在 87%以上。</div>
+            </div>
+            <div class="col-12 col-xl-10">
+              <div class="event-imges plan ex"><img src="images/experience.png" alt="experience"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/tibame.all.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
